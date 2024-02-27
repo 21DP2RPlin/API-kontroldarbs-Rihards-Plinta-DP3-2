@@ -10,7 +10,6 @@ Kontrolieris veic mediju starp modeli un skatu. Kontrolieris saņem lietotāja p
 Laravel pievieno šo MVC modeli ar savām papildu funkcionalitātēm un izstrādājumu rīkiem, kas padara nodarbību ar MVC arhitektūru vieglākā un efektīvākā. Piemēram, Laravel ļauj izveidot RESTful API, izmantojot Eloquent ORM (Object-Relational Mapping) un kārtulas (routes), kas var automātiski maršrutēt pieprasījumus uz attiecīgajiem kontrolieriem.
 # Kas ir ORM, kāpēc to izmanto tīra SQL vietā?
 - ORM (Object-Relational Mapping) ir tehnika, kas ļauj meklēt un manipulēt datiem no datu bāzes, izmantojot objektorientēto paradigma. ORM ir izmantots, lai samazinātu izstrādātāja datu slēptu izmantošanu un padarītu kodu tīru un saprotāmu. Tā arī abstraktizē datu bāzi, kas padara datu bāzes maiņas vienkāršākām, jo ORM bibliotēkas var automatizēt daļu no datu bāzes izveidošanas un modificēšanas darbībām.
-# Uzraksti Eloquent ORM pieprasījumu modelim User, kur nepieciešams iegūt visus
-lietotājus kuriem reitings ir lielāks par 4. 
+# Uzraksti Eloquent ORM pieprasījumu modelim User, kur nepieciešams iegūt visus lietotājus kuriem reitings ir lielāks par 4. 
 - use App\Models\User;
-$users = User::where('rating', '>',  4)->get();
+- $users = User::where('rating', '>',  4)->get();
